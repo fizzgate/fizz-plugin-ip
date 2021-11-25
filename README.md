@@ -129,7 +129,7 @@ III、当需要对目标服务或路由做IP过滤时，可在Fizz Admin管理�
 ![](doc/Register_IP_Filter_Plugin.png)
 
 - 备注
-  - 1、注册插件时，插件名称必须与bean名称一致，否则无法注册成功，如：bean name是ipPlugin，则注册插件时插件名称即为ipPlugin。
+  - 1、注册插件时，插件名称必须与bean名称一致，否则无法注册成功，如：bean name是fizz-plugin-ip，则注册插件时插件名称即为fizz-plugin-ip。
   - 2、如需单独指定gwGroup，请先在Fizz Admin管理系统中网关管理->网关分组中配置新增自定义网关分组信息，这里不做赘述。
 
 
