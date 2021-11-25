@@ -1,4 +1,4 @@
-package com.ol.fizz.plugin.ip;
+package com.fizz.plugin.ip;
 
 import com.google.common.collect.Lists;
 import lombok.Data;

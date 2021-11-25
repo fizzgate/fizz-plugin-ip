@@ -1,6 +1,6 @@
-package com.ol.fizz.plugin.ip;
+package com.fizz.plugin.ip;
 
-import com.ol.fizz.plugin.ip.util.IpMatchUtils;
+import com.fizz.plugin.ip.util.IpMatchUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -22,7 +22,7 @@ class IpMatchUtilsTest {
                 + ",192.168.4.0/24" // 設置一个网段
                 + ",234.168.32.0/19" // 設置一个网段
                 + ",10.237.208.0/24"; // 設置一个网段
-        assertTrue(IpMatchUtils.match("1.168.1.1", ipWhite)); // true
+        Assertions.assertTrue(IpMatchUtils.match("1.168.1.1", ipWhite)); // true
         assertTrue(IpMatchUtils.match("52.168.1.1", ipWhite)); // true
         Assertions.assertFalse(IpMatchUtils.match("192.168.1.2", ipWhite)); // false
         Assertions.assertFalse(IpMatchUtils.match("192.168.3.16", ipWhite)); // false

@@ -1,4 +1,4 @@
-package com.ol.fizz.plugin.ip.util;
+package com.fizz.plugin.ip.util;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;

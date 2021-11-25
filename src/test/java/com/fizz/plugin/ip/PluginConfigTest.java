@@ -1,6 +1,6 @@
-package com.ol.fizz.plugin.ip;
+package com.fizz.plugin.ip;
 
-import com.ol.fizz.plugin.ip.PluginConfig.Item;
+import com.fizz.plugin.ip.PluginConfig.Item;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

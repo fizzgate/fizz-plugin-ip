@@ -1,12 +1,12 @@
-package com.ol.fizz.plugin.ip;
+package com.fizz.plugin.ip;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import com.ol.fizz.plugin.ip.util.ConfigUtils;
-import com.ol.fizz.plugin.ip.util.IpMatchUtils;
-import com.ol.fizz.plugin.ip.util.IpUtils;
+import com.fizz.plugin.ip.util.ConfigUtils;
+import com.fizz.plugin.ip.util.IpMatchUtils;
+import com.fizz.plugin.ip.util.IpUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.http.HttpHeaders;
@@ -28,8 +28,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import static com.ol.fizz.plugin.ip.IpPlugin.PLUGIN_NAME;
-import static com.ol.fizz.plugin.ip.RouterConfig.FieldName.*;
+import static com.fizz.plugin.ip.IpPlugin.PLUGIN_NAME;
+import static com.fizz.plugin.ip.RouterConfig.FieldName.*;
 
 /**
  * @author hua.huang
@@ -37,7 +37,7 @@ import static com.ol.fizz.plugin.ip.RouterConfig.FieldName.*;
 @Slf4j
 @Component(value = PLUGIN_NAME)
 public class IpPlugin implements FizzPluginFilter {
-    public static final String PLUGIN_NAME = "ipPlugin";
+    public static final String PLUGIN_NAME = "fizz-plugin-ip";
     @Resource
     private ObjectMapper objectMapper;
     @Resource

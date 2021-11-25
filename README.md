@@ -26,7 +26,7 @@ II. 管理后台导入以下SQL
 
  ```sql
      INSERT INTO `tb_plugin` (`fixed_config`, `eng_name`, `chn_name`, `config`, `order`, `instruction`, `type`, `create_user`, `create_dept`, `create_time`, `update_user`, `update_time`, `status`, `is_deleted`) VALUES 
-     ('{"configs":[{"gwGroup":"fizz-gateway-plugin-example","whiteIp":"","blackIp":"10.237.125.2,10.237.125.11"}]}', 'ipPlugin', 'IP黑白名单插件', '[{"field":"whiteIp","label":"IP白名单","component":"textarea","dataType":"string","placeholder":"1.168.1.1,52.*,192.168.3.17-192.168.3.38,192.168.4.0/24","desc":"规则：0、多个用‘,’分割；1、白名单优先于黑名单；2、若白名单和黑名单都没匹配到；2.1、且有配置白名单，则拦截；2.2、且没有配置白名单，则通行。格式：1、单个IP的白名单(1.168.1.1)；2、ip通配符'*'作为某段的通配符，对一个ip段进行匹配（52.*,224.23.87.*）；3、IP范围，用'-'分割两界（192.168.3.17-192.168.3.38）；4、网段（192.168.4.0/24）","rules":[]},{"field":"blackIp","label":"IP黑名单","component":"textarea","dataType":"string","placeholder":"1.168.1.1,52.*,192.168.3.17-192.168.3.38,192.168.4.0/24","desc":"规则：0、多个用‘,’分割；1、白名单优先于黑名单；2、若白名单和黑名单都没匹配到；2.1、且有配置白名单，则拦截；2.2、且没有配置白名单，则通行。格式：1、单个IP的白名单(1.168.1.1)；2、ip通配符'*'作为某段的通配符，对一个ip段进行匹配（52.*,224.23.87.*）；3、IP范围，用'-'分割两界（192.168.3.17-192.168.3.38）；4、网段（192.168.4.0/24）","rules":[]},{"field":"errorRespContent","label":"响应报文","component":"textarea","dataType":"string","default":"{\"msg\":\"非法IP\",\"code\":-1}","desc":"拦截成功时响应报文, 如：{\"msg\":\"非法IP\",\"code\":-1}","rules":[]},{"field":"errorRespContentType","label":"响应头content-type","component":"input","dataType":"string","default":"application/json;charset=UTF-8","desc":"拦截成功时响应头的content-type","rules":[]}]', 1, '规则：0、多个用‘,’分割；1、白名单优先于黑名单；2、若白名单和黑名单都没匹配到；2.1、且有配置白名单，则拦截；2.2、且没有配置白名单，则通行。格式：1、单个IP的白名单(1.168.1.1)；2、ip通配符'*'作为某段的通配符，对一个ip段进行匹配（52.*,224.23.87.*）；3、IP范围，用'-'分割两界（192.168.3.17-192.168.3.38）；4、网段（192.168.4.0/24）', 2, NULL, NULL, NULL, NULL, NULL, 1, 0);
+     ('{"configs":[{"gwGroup":"fizz-gateway-plugin-example","whiteIp":"","blackIp":"10.237.125.2,10.237.125.11"}]}', 'fizz-plugin-ip', 'IP黑白名单插件', '[{"field":"whiteIp","label":"IP白名单","component":"textarea","dataType":"string","placeholder":"1.168.1.1,52.*,192.168.3.17-192.168.3.38,192.168.4.0/24","desc":"规则：0、多个用‘,’分割；1、白名单优先于黑名单；2、若白名单和黑名单都没匹配到；2.1、且有配置白名单，则拦截；2.2、且没有配置白名单，则通行。格式：1、单个IP的白名单(1.168.1.1)；2、ip通配符'*'作为某段的通配符，对一个ip段进行匹配（52.*,224.23.87.*）；3、IP范围，用'-'分割两界（192.168.3.17-192.168.3.38）；4、网段（192.168.4.0/24）","rules":[]},{"field":"blackIp","label":"IP黑名单","component":"textarea","dataType":"string","placeholder":"1.168.1.1,52.*,192.168.3.17-192.168.3.38,192.168.4.0/24","desc":"规则：0、多个用‘,’分割；1、白名单优先于黑名单；2、若白名单和黑名单都没匹配到；2.1、且有配置白名单，则拦截；2.2、且没有配置白名单，则通行。格式：1、单个IP的白名单(1.168.1.1)；2、ip通配符'*'作为某段的通配符，对一个ip段进行匹配（52.*,224.23.87.*）；3、IP范围，用'-'分割两界（192.168.3.17-192.168.3.38）；4、网段（192.168.4.0/24）","rules":[]},{"field":"errorRespContent","label":"响应报文","component":"textarea","dataType":"string","default":"{\"msg\":\"非法IP\",\"code\":-1}","desc":"拦截成功时响应报文, 如：{\"msg\":\"非法IP\",\"code\":-1}","rules":[]},{"field":"errorRespContentType","label":"响应头content-type","component":"input","dataType":"string","default":"application/json;charset=UTF-8","desc":"拦截成功时响应头的content-type","rules":[]}]', 1, '规则：0、多个用‘,’分割；1、白名单优先于黑名单；2、若白名单和黑名单都没匹配到；2.1、且有配置白名单，则拦截；2.2、且没有配置白名单，则通行。格式：1、单个IP的白名单(1.168.1.1)；2、ip通配符'*'作为某段的通配符，对一个ip段进行匹配（52.*,224.23.87.*）；3、IP范围，用'-'分割两界（192.168.3.17-192.168.3.38）；4、网段（192.168.4.0/24）', 2, NULL, NULL, NULL, NULL, NULL, 1, 0);
  ```
 
 更多网关二次开发请参考[网关快速开发](https://www.fizzgate.com/fizz/guide/fast-dev/fast-dev.html) 、[插件开发样例](https://www.fizzgate.com/fizz/guide/plugin/)
@@ -42,7 +42,7 @@ III、当需要对目标服务或路由做IP过滤时，可在Fizz Admin管理�
 - 2、白名单优先级高于黑名单；
 - 3、若白名单和黑名单都有匹配到，且有配置白名单，则通行；且没有配置白名单，则拦截。
 
-**表单定义->路由级别的自定义属性，代码示例：com.ol.fizz.plugin.ip.RouterConfig**
+**表单定义->路由级别的自定义属性，代码示例：RouterConfig**
 ```json
 [
   {
@@ -97,7 +97,7 @@ III、当需要对目标服务或路由做IP过滤时，可在Fizz Admin管理�
 - 备注
   定义规范参考官方新增插件中的相关表单规范说明描述，[Fizz Gateway -> 插件管理 -> 新增插件 -> 表单定义](http://fizzgate.com/guide/manager/manager_plugin.html#%E6%A6%82%E8%BF%B0)
 
-**自定义配置->插件级别的自定义配置， 代码示例：com.ol.fizz.plugin.ip.PluginConfig**
+**自定义配置->插件级别的自定义配置， 代码示例：PluginConfig**
 
 ```json
 {
