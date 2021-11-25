@@ -17,7 +17,7 @@ I、gateway项目pom文件中引入以下依赖：
 ```xml
 <dependency>
   <groupId>com.fizzgate</groupId>
-  <artifactId>fizz-ip-plugin</artifactId>
+  <artifactId>fizz-plugin-ip</artifactId>
   <version>2.3.4-beta2</version>
 </dependency>
 ```
