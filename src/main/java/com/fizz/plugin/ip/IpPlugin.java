@@ -37,7 +37,7 @@ import static com.fizz.plugin.ip.RouterConfig.FieldName.*;
 @Slf4j
 @Component(value = PLUGIN_NAME)
 public class IpPlugin implements FizzPluginFilter {
-    public static final String PLUGIN_NAME = "fizz-plugin-ip";
+    public static final String PLUGIN_NAME = "fizz_plugin_ip";
     @Resource
     private ObjectMapper objectMapper;
     @Resource
