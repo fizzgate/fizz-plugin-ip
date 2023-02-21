@@ -16,11 +16,11 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
-import we.plugin.FizzPluginFilter;
-import we.plugin.FizzPluginFilterChain;
-import we.plugin.auth.ApiConfig;
-import we.plugin.auth.ApiConfigService;
-import we.util.WebUtils;
+import com.fizzgate.plugin.FizzPluginFilter;
+import com.fizzgate.plugin.FizzPluginFilterChain;
+import com.fizzgate.plugin.auth.ApiConfig;
+import com.fizzgate.plugin.auth.ApiConfigService;
+import com.fizzgate.util.WebUtils;
 
 import javax.annotation.Resource;
 import java.net.SocketException;
@@ -128,7 +128,7 @@ public class IpPlugin implements FizzPluginFilter {
     }
 
     private List<PluginConfig.Item> pluginConfig(ServerWebExchange exchange, Map<String, Object> config) {
-        String fixedConfig = (String) config.get(we.plugin.PluginConfig.CUSTOM_CONFIG);
+        String fixedConfig = (String) config.get(com.fizzgate.plugin.PluginConfig.CUSTOM_CONFIG);
         try {
             PluginConfig pluginConfig = objectMapper.readValue(fixedConfig, PluginConfig.class);
             if (pluginConfig != null && pluginConfig.getConfigs() != null) {

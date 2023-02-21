@@ -4,9 +4,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext;
-import we.FizzAppContext;
-import we.config.AggregateRedisConfig;
-import we.log.LogSendAppender;
+import com.fizzgate.FizzAppContext;
+import com.fizzgate.config.AggregateRedisConfig;
+import com.fizzgate.log.LogSendAppender;
 
 /**
  * 启动类
@@ -15,7 +15,7 @@ import we.log.LogSendAppender;
  */
 @Slf4j
 @SpringBootApplication(scanBasePackages = {
-        "we.config", "we.fizz", "we.plugin", "we.filter", "we.proxy", "com.ol.fizz.plugin.ip"
+        "com.fizzgate.config", "com.fizzgate.fizz", "com.fizzgate.plugin", "com.fizzgate.filter", "com.fizzgate.proxy", "com.ol.fizz.plugin.ip"
 })
 public class Application {
 

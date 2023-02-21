@@ -37,7 +37,7 @@ class IpPluginTest {
             Map<String, Object> config = Maps.newHashMap();
             config.put(RouterConfig.FieldName.WHITE_IP, "");
             config.put(RouterConfig.FieldName.BLACK_IP, "180.169.124.157");
-            config.put(we.plugin.PluginConfig.CUSTOM_CONFIG, "{\"configs\":[{\"gwGroup\":\"fizz-gateway-plugin-example\",\"whiteIp\":\"\",\"blackIp\":\"10.237.209.56,180.169.124.158\"}]}");
+            config.put(com.fizzgate.plugin.PluginConfig.CUSTOM_CONFIG, "{\"configs\":[{\"gwGroup\":\"fizz-gateway-plugin-example\",\"whiteIp\":\"\",\"blackIp\":\"10.237.209.56,180.169.124.158\"}]}");
             HttpHeaders httpHeaders = new HttpHeaders();
             httpHeaders.add("clientip", "180.169.124.157");
             httpHeaders.add("x-forwarded-for", "180.169.124.158");
@@ -57,7 +57,7 @@ class IpPluginTest {
             Map<String, Object> config = Maps.newHashMap();
             config.put(RouterConfig.FieldName.WHITE_IP, "");
             config.put(RouterConfig.FieldName.BLACK_IP, "180.169.124.157");
-            config.put(we.plugin.PluginConfig.CUSTOM_CONFIG, "{\"configs\":[1{\"gwGroup\":\"fizz-gateway-plugin-example\",\"whiteIp\":\"\",\"blackIp\":\"10.237.209.56,180.169.124.158\"}]}");
+            config.put(com.fizzgate.plugin.PluginConfig.CUSTOM_CONFIG, "{\"configs\":[1{\"gwGroup\":\"fizz-gateway-plugin-example\",\"whiteIp\":\"\",\"blackIp\":\"10.237.209.56,180.169.124.158\"}]}");
             HttpHeaders httpHeaders = new HttpHeaders();
             httpHeaders.add("clientip", "180.169.124.157");
             httpHeaders.add("x-forwarded-for", "180.169.124.158");
@@ -76,7 +76,7 @@ class IpPluginTest {
             Map<String, Object> config = Maps.newHashMap();
             config.put(RouterConfig.FieldName.WHITE_IP, "");
             config.put(RouterConfig.FieldName.BLACK_IP, "");
-            config.put(we.plugin.PluginConfig.CUSTOM_CONFIG, "{\"configs\":[{\"gwGroup\":\"fizz-gateway-plugin-example\",\"whiteIp\":\"\",\"blackIp\":\"10.237.209.56,180.169.124.158\"}]}");
+            config.put(com.fizzgate.plugin.PluginConfig.CUSTOM_CONFIG, "{\"configs\":[{\"gwGroup\":\"fizz-gateway-plugin-example\",\"whiteIp\":\"\",\"blackIp\":\"10.237.209.56,180.169.124.158\"}]}");
             HttpHeaders httpHeaders = new HttpHeaders();
             httpHeaders.add("clientip", "180.169.124.157");
             httpHeaders.add("x-forwarded-for", "180.169.124.158");
@@ -95,7 +95,7 @@ class IpPluginTest {
             Map<String, Object> config = Maps.newHashMap();
             config.put(RouterConfig.FieldName.WHITE_IP, "");
             config.put(RouterConfig.FieldName.BLACK_IP, "");
-            config.put(we.plugin.PluginConfig.CUSTOM_CONFIG, "{\"configs\":[{\"gwGroup\":\"fizz-gateway-plugin-example\",\"whiteIp\":\"\",\"blackIp\":\"10.237.209.56,180.169.124.158\"}]}");
+            config.put(com.fizzgate.plugin.PluginConfig.CUSTOM_CONFIG, "{\"configs\":[{\"gwGroup\":\"fizz-gateway-plugin-example\",\"whiteIp\":\"\",\"blackIp\":\"10.237.209.56,180.169.124.158\"}]}");
             HttpHeaders httpHeaders = new HttpHeaders();
             httpHeaders.add("clientip", "");
             httpHeaders.add("x-forwarded-for", "");
